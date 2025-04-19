@@ -10,14 +10,14 @@
     <!-- Navigation -->
     <div class="container">
         <nav>
-            <a href="#" class="logo">groq<span>.</span></a>
-            <div class="nav-links" id="navLinks">
+            <a href="index.html" class="logo">CodeVeere<span>.</span></a>
+            <!-- <div class="nav-links" id="navLinks">
                 <a href="#">Products</a>
                 <a href="#">Pricing</a>
                 <a href="#">Docs</a>
                 <a href="#">Company</a>
                 <a href="#" class="cta-button">Get Started</a>
-            </div>
+            </div> -->
             <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
         </nav>
     </div>
@@ -26,7 +26,10 @@
     <section class="hero">
         <div class="bg-animation" id="bgAnimation"></div>
         <div class="hero-content">
-            <h1>Ultra-Fast AI Inference</h1>
+            <!-- Add the container for the 3D robot -->
+            <div id="robot-container"></div>
+
+            <h1>ULTRA-FAST AI INFERENCE</h1>
             <p>Experience blazing-fast LLM inference with Groq's groundbreaking technology. Built for developers who need speed without compromising on quality.</p>
             
             <!-- Chatboard Component Instead of Buttons -->
@@ -146,11 +149,21 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Groq, Inc. All rights reserved.</p>
+                <p>&copy; 2025 CodeVeere, Inc. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Include Three.js library and GLTFLoader -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.163.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.163.0/examples/jsm/"
+            }
+        }
+    </script>
+    <!-- Your existing script -->
+    <script src="script.js" type="module"></script> <!-- Add type="module" -->
 </body>
 </html>

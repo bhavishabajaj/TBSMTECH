@@ -382,6 +382,7 @@ footer {
 .footer-col {
     flex: 1;
     min-width: 200px;
+    align-items: center;
 }
 
 .footer-col h4 {
